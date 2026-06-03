@@ -21,4 +21,4 @@ runs:
       shell: bash
       run: |
         npm install -g node-gyp
-        yarn config set node-gyp "$(npm bin -g)/node-gyp"
+        yarn config set nodeLinker node-modules
