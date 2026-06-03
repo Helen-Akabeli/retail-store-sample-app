@@ -1,0 +1,10 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Shell scripts
+*.sh eol=lf
+mvnw eol=lf
+
+# Make executable
+*.sh export-ignore
+mvnw export-ignore

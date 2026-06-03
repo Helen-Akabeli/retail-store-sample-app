@@ -4,8 +4,21 @@ runs:
   using: "composite"
   steps:
     - uses: jdx/mise-action@v3
+    
+    - name: Fix executable permissions
+      shell: bash
+      run: |
+        find . -type f -name "mvnw" -exec chmod +x {} \;
+        find . -type f -name "*.sh" -exec chmod +x {} \;
+    
     - name: yarn install
       shell: bash
       run: |
         corepack enable
         yarn install
+    
+    - name: Install node-gyp globally
+      shell: bash
+      run: |
+        npm install -g node-gyp
+        yarn config set node-gyp "$(npm bin -g)/node-gyp"
