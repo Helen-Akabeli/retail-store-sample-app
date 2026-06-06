@@ -51,7 +51,7 @@ jobs:
       - name: Run trace assertions
         run: |
           # Wait for traces to be received
-          sleep 90
+          sleep 120
           bash src/e2e/scripts/assert-traces.sh
       - name: Run load test
         run: |
