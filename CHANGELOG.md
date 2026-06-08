@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/Helen-Akabeli/retail-store-sample-app/compare/v1.6.1...v1.6.2) (2026-06-08)
+
+
+### Bug Fixes
+
+* Replace invalid yarn config setting with nodeLinker configuration ([6bf715c](https://github.com/Helen-Akabeli/retail-store-sample-app/commit/6bf715c4996f354efd801cf1c8b0f4c47a6a03f3))
+
 ## [1.6.1](https://github.com/aws-containers/retail-store-sample-app/compare/v1.6.0...v1.6.1) (2026-05-27)
 
 
